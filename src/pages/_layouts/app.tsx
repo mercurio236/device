@@ -5,8 +5,17 @@ export function AppLayout() {
   return (
     <div>
       <Header />
-      <div>
-        <Outlet/>
+      <div
+        style={{
+          display: 'flex',
+          flex: 1,
+          paddingTop: 6,
+          margin: 10,
+          gap: 4,
+          flexDirection: 'column',
+        }}
+      >
+        <Outlet />
       </div>
     </div>
   )
