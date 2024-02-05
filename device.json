@@ -1,0 +1,139 @@
+{
+    "_id": "65c1267706b0ff9cb40357d0"
+  ,
+    "code": "28207796-f62b-4414-b6a8-e1783164asa2",
+    "name": "CÂMARA DE CONGELADOS N⁰6",
+    "active": true,
+    "installDate": {
+      "$date": "2023-07-27T18:44:15.000Z"
+    },
+    "meter": "BA:83:64:67:66:8C",
+    "equipmentID": "2",
+    "fuseBoxMeter": false,
+    "solarPanel": false,
+    "voltage": 220,
+    "alias": "Casa João",
+    "comment": "Casa João",
+    "establishmentId": "665366555",
+    "equipment": "rcd-cr",
+    "equipmentType": 2,
+    "timezone": "America/Sao_Paulo",
+    "createdAt": {
+      "$date": "2023-07-27T18:44:15.572Z"
+    },
+    "updatedAt": {
+      "$date": "2023-10-19T04:49:12.879Z"
+    },
+    "__v": 0,
+    "installationMetaData": {
+      "reason": "installation",
+      "payload": {
+        "estabID": "665366555",
+        "estabAlias": "Casa João",
+        "macAlias": "CÂMARA DE CONGELADOS N⁰6",
+        "equipID": "2"
+      },
+      "lastCommandId": null,
+      "CEP": null,
+      "emailUser": null,
+      "alias": null,
+      "uC": null,
+      "uc": null
+    },
+    "compressor_power": 7.37,
+    "defrost_power": 4.4,
+    "evap_fan_power": 1,
+    "mac": "EC:62:60:11:57:E4",
+    "dateObsInit": {
+      "$date": "2023-05-11T13:30:01.000Z"
+    },
+    "dateObsEnd": {
+      "$date": "2023-07-18T03:00:01.000Z"
+    },
+    "fwVer": {
+      "requestDate": {
+        "$date": "2023-10-17T15:14:05.096Z"
+      },
+      "version": "1.1.2"
+    },
+    "impediment": {
+      "isImpediment": false,
+      "reasons": []
+    },
+    "statusComissioning": {
+      "current": "installed",
+      "installed": {
+        "supplyType": "",
+        "volume": 0,
+        "tempDemands": {
+          "min": 0,
+          "max": 0
+        },
+        "timer": false,
+        "pipefy": {
+          "link": "",
+          "id": ""
+        },
+        "grafana": "",
+        "configCur": {
+          "data": {},
+          "savedDate": ""
+        }
+      },
+      "baseFormation": {
+        "weekDay": {
+          "sun": {
+            "counter": 0,
+            "hours": {},
+            "initialDate": "",
+            "finalDate": "",
+            "loadingComplete": 0
+          },
+          "mon": {
+            "counter": 0,
+            "hours": {},
+            "initialDate": "",
+            "finalDate": "",
+            "loadingComplete": 0
+          },
+          "tue": {
+            "counter": 0,
+            "hours": {},
+            "initialDate": "",
+            "finalDate": "",
+            "loadingComplete": 0
+          },
+          "wed": {
+            "counter": 0,
+            "hours": {},
+            "initialDate": "",
+            "finalDate": "",
+            "loadingComplete": 0
+          },
+          "thu": {
+            "counter": 0,
+            "hours": {},
+            "initialDate": "",
+            "finalDate": "",
+            "loadingComplete": 0
+          },
+          "fri": {
+            "counter": 0,
+            "hours": {},
+            "initialDate": "",
+            "finalDate": "",
+            "loadingComplete": 0
+          },
+          "sat": {
+            "counter": 0,
+            "hours": {},
+            "initialDate": "",
+            "finalDate": "",
+            "loadingComplete": 0
+          }
+        }
+      },
+      "analysis": {},
+      "tests": {}
+    }
+  }
