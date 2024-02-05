@@ -15,7 +15,7 @@ import {
 } from 'recharts'
 import { defaultTheme } from '@/styles/theme'
 
-//const id = '65c1267706b0ff9cb40357d0' para consultar o device pela url basta colocar o ?id=65c1267706b0ff9cb40357d0 depois da barra
+//const id = '65c1267706b0ff9cb40357d0' para consultar o device pela url basta colocar o ?id=65c1267706b0ff9cb40357d0 depois da barra de pesquisa
 
 export function Home() {
   const [dataDevice, setDataDevice] = useState({} as DataDevice)
