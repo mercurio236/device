@@ -22,6 +22,8 @@ export const Input = styled.input`
     padding: 5px;
     border-radius: 5px;
     border-width: 1px;
+    margin: 0 2px 20px 0;
+    background-color: ${(theme) => theme.theme['gray-200']};
 `
 
 export const ButtonSearch = styled.button``
