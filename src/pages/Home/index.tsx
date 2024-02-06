@@ -4,7 +4,7 @@ import { api } from '../../lib/axios'
 import { AxiosError } from 'axios'
 import { DataDevice } from '../../DTOs/dataDevice'
 import dayjs from 'dayjs'
-import { useSearchParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import {
   CartesianGrid,
   Line,
@@ -15,23 +15,23 @@ import {
 } from 'recharts'
 import { defaultTheme } from '@/styles/theme'
 
-//const id = '65c1267706b0ff9cb40357d0' para consultar o device pela url basta colocar o ?id=65c1267706b0ff9cb40357d0 depois da barra de pesquisa
+//const id = '65c1267706b0ff9cb40357d0'
 
 export function Home() {
   const [dataDevice, setDataDevice] = useState({} as DataDevice)
-  const [searchParams, setSearchParams] = useSearchParams()
 
-  const idDevice = searchParams.get('id')
+  const params = useParams()
+  const {id} = params
 
   async function reqDataDevice() {
     try {
-      const response = await api.get(`/installation-meter/${idDevice}`, {
+      const response = await api.get(`/installation-meter/${id}`, {
         headers: {
           'x-access-token':
             'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMTU3YTA5YWY5ODFiYTUyODc3ZjAzNiIsImlhdCI6MTY3ODgzODgxM30.F5Icoma-bOswkRmKpjYjmAQrXE32CM9kAQ0D2S0JgPY',
         },
       })
-
+      console.log(response.data)
       setDataDevice(response.data.installationMeter)
     } catch (error) {
       if (error instanceof AxiosError) {
