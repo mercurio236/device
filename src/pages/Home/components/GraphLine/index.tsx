@@ -38,9 +38,9 @@ export function GraphLine({ dateInitial }: GraphLineProps) {
       : []
 
   const dateFormatter = (date: number) => {
-    const dateTimes = new Date(date)
+    const dateTimes = new Date(date).toISOString()
 
-    return dayjs(dateTimes).format('DD/MM/YYYY HH:mm')
+    return dayjs(dateTimes).format('MM/DD/YYYY HH:mm')
   }
 
   return (
