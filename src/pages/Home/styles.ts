@@ -10,13 +10,6 @@ export const DivContainer = styled.div`
  
 `
 
-export const DeviceContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
-`
-
 export const Input = styled.input`
     height: 30px;
     padding: 5px;
